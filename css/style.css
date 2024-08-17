@@ -554,6 +554,14 @@ ul#nav li a:hover,ul#nav li a:focus {
   text-decoration: underline;
 }
 
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 767px) {
     body {
@@ -625,16 +633,22 @@ ul#nav li a:hover,ul#nav li a:focus {
     ul.sf-menu {
         display: block; /* Stack menu items vertically */
         width: 100%; /* Make menu full width */
+        padding: 0;
+        list-style: none;
     }
 
     ul.sf-menu li {
         float: none; /* Remove floating of menu items */
         width: 100%; /* Make menu items full width */
+        box-sizing: border-box;
     }
 
     ul.sf-menu ul {
         position: static; /* Position sub-menus statically */
         width: 100%; /* Make sub-menus full width */
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
     ul.sf-menu ul li {
@@ -646,13 +660,17 @@ ul#nav li a:hover,ul#nav li a:focus {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     #logo {
         width: 90%; /* Adjust logo container width for tablets */
+        margin: 0 auto; /* Center the logo container */
     }
 
     #sidebar_container {
         width: 30%; /* Adjust sidebar width for tablets */
+        float: left; /* Float sidebar to the left */
+        margin-top: 10px;
     }
 
     .content {
         width: 65%; /* Adjust content width for tablets */
+        float: right; /* Float content to the right */
     }
 }
