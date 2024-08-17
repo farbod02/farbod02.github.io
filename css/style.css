@@ -553,3 +553,106 @@ ul#nav li a:hover,ul#nav li a:focus {
   color: #FFF;
   text-decoration: underline;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 1em; /* Adjust font size for readability on smaller screens */
+        zoom: 100%; /* Remove zoom effect for mobile */
+    }
+
+    header {
+        height: auto; /* Adjust header height for small screens */
+        background-size: cover; /* Ensure the background image covers the header area */
+    }
+
+    #logo {
+        width: 100%; /* Make logo container full width */
+        height: auto; /* Adjust height to fit content */
+        padding: 10px;
+    }
+
+    #logo_text {
+        width: 100%; /* Make logo text full width */
+        background: none; /* Remove background image for smaller screens */
+    }
+
+    nav {
+        height: auto; /* Adjust navigation height for smaller screens */
+    }
+
+    #menu_container {
+        width: 100%; /* Make menu container full width */
+    }
+
+    #site_content {
+        width: 100%; /* Make site content full width */
+        padding: 10px; /* Add padding for mobile view */
+    }
+
+    #sidebar_container {
+        float: none; /* Remove floating of sidebar */
+        width: 100%; /* Make sidebar full width */
+        margin-top: 10px; /* Add margin on top */
+    }
+
+    .content {
+        width: 100%; /* Make content full width */
+        float: none; /* Remove floating of content */
+    }
+
+    .sidebar {
+        width: 100%; /* Make sidebar full width */
+        margin-bottom: 20px; /* Add margin at the bottom */
+    }
+
+    footer {
+        font-size: 0.8em; /* Adjust font size for footer */
+        padding: 15px 0; /* Adjust padding for smaller screens */
+    }
+
+    #scroll {
+        width: 100%; /* Make scroll button full width */
+        text-align: center; /* Center the scroll button */
+        background: none; /* Remove background */
+    }
+
+    #scroll a img {
+        margin: 0; /* Remove margins */
+        padding: 0; /* Remove padding */
+    }
+
+    ul.sf-menu {
+        display: block; /* Stack menu items vertically */
+        width: 100%; /* Make menu full width */
+    }
+
+    ul.sf-menu li {
+        float: none; /* Remove floating of menu items */
+        width: 100%; /* Make menu items full width */
+    }
+
+    ul.sf-menu ul {
+        position: static; /* Position sub-menus statically */
+        width: 100%; /* Make sub-menus full width */
+    }
+
+    ul.sf-menu ul li {
+        width: 100%; /* Make sub-menu items full width */
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #logo {
+        width: 90%; /* Adjust logo container width for tablets */
+    }
+
+    #sidebar_container {
+        width: 30%; /* Adjust sidebar width for tablets */
+    }
+
+    .content {
+        width: 65%; /* Adjust content width for tablets */
+    }
+}
