@@ -70,3 +70,11 @@ The site is intentionally:
 - easy to edit
 
 You do not need React, Next.js, or any build step.
+
+## Languages
+
+The globe icon in the header switches between `index.html` (English) and `index-de.html` (German). Upload both HTML files alongside `styles.css` and `script.js` to GitHub Pages.
+
+## Photos
+
+The four photos are included in `images/` and appear on both the English and German pages. Upload the entire `images` folder to GitHub alongside the HTML, CSS, and JS files.
